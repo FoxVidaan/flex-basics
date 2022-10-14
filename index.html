@@ -14,7 +14,11 @@
         <nav></nav>
     </header>
     <main>
-        <aside></aside>
+        <aside>
+            <div></div>
+            <div></div>
+            <div></div>
+        </aside>
         <section>
             <article></article>
             <article></article>
@@ -27,7 +31,7 @@
 </body>
 
 <style>
-    body { 
+    body {
         display: flex;
         flex-direction: column;
         height: calc(100vh - 16px);
@@ -57,10 +61,14 @@
         display: flex;
         gap: 10px;
     }
-    
+
     aside {
         background-color: yellow;
         flex: 1;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        gap: 10px;
     }
 
     section {
@@ -76,6 +84,11 @@
         background-color: blue;
     }
 
+    aside > div {
+        flex: 1;
+        background-color: yellowgreen;
+    }
+
     footer {
         display: flex;
         flex: 1;
@@ -83,4 +96,5 @@
         padding: 10px;
     }
 </style>
+
 </html>
